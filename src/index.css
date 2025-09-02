@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App-wide utility classes */
+html, body, #root { height: 100%; }
+.gradient-hero { background-image: linear-gradient(to bottom right, #fce7f3, #fff1f2, #ffffff); }
+.card { @apply rounded-2xl border border-neutral-200 bg-white shadow-sm; }
+.btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-xl font-semibold transition; }
+.btn-primary { @apply bg-fuchsia-600 text-white hover:bg-fuchsia-700; }
+.btn-outline { @apply border border-fuchsia-600 text-fuchsia-700 hover:bg-fuchsia-50; }
+.container { @apply max-w-6xl mx-auto px-4; }
+.section { @apply py-16; }
+.heading { @apply text-3xl md:text-4xl font-bold tracking-tight; }
+.subheading { @apply text-fuchsia-600 font-semibold tracking-wide uppercase; }
+.small { @apply text-sm text-neutral-600; }
